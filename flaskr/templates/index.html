@@ -24,16 +24,16 @@
 	</div>
 	<div class="row">
 	  <div class="corpo">
-	  	<form class="form-horizontal" action = "http://localhost:5000/env" method = "POST">
+	  	<form class="form-horizontal" action = "http://localhost:5000/add_room" method = "POST">
 			<div class="form-group">
 					<div class=" div-input col-sm-12">
-					<input type="text" class="input form-control" id="inputEmail3" placeholder="Login" name="numIP">
-					<input type="number" class="input form-control" id="inputEmail1" placeholder="Senha" name="numSM" min = "1" max = "32">
+					<input type="text" class="input form-control" id="inputEmail3" placeholder="dispositivo" name="room">
+					<input type="text" class="input form-control" id="inputEmail1" placeholder="Descricao" name="description" min = "1" max = "32">
 				</div>
 			</div>
 			<div class="form-group">
     				<div class="text-center col-sm-12">
-      					<button type="submit" class="btn btn-default">Entrar</button>
+      					<button type="submit" class="btn btn-default">Cadastrar</button>
     				</div>
   			</div>
 	      </form>

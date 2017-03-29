@@ -1,5 +1,6 @@
 MANIFEST.in
 flaskr/__init__.py
+flaskr/flaskr (cópia).py
 flaskr/flaskr.py
 flaskr/schema.sql
 flaskr.egg-info/PKG-INFO
@@ -30,3 +31,4 @@ flaskr/templates/dados.html
 flaskr/templates/dados.min.html
 flaskr/templates/index - Copia.html
 flaskr/templates/index.html
+flaskr/templates/show_rooms.html
