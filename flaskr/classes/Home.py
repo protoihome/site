@@ -12,10 +12,11 @@ class Dicionario(dict):
 		self[key] = value
 
 class Device(object):
-	def __init__(self):
+	def __init__(self, pin_):
 		self.gpio = GPIO(debug=False)
-
-	def OnDevice(self, pin_):
+		self.gpio.pinMode(pin_, self.gpio.OUTPUT)
+		
+	def onDevice(self, pin_):
 		return self.gpio.digitalWrite(pin_, self.gpio.HIGH)
 
 	def offDevice(self, pin_):

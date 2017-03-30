@@ -1,7 +1,7 @@
 # all the imports
 import os
 import sqlite3
-from classes import Home as home
+from classes import Home
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
 
@@ -10,7 +10,7 @@ app.config.from_object(__name__)
 ####################################################################
 ####################################################################
 ####################################################################
-
+home = Home.Device(13)
 
 # Load default config and override config from an environment variable
 app.config.update(dict(
@@ -114,14 +114,20 @@ def swap():
     if request.method == 'POST':
         #aparelho = request.form['id_ap']
         id_device = request.form['id']
-        status_device = int(request.form['status'])
+        status_device = int(request.form['estado'])
         if (status_device):
             pino = 13
-            home.Device.offDevice(pino)
+            home.onDevice(pino)
+            msg1 = "Led foi ligado"
+
+        if (status_device == 0):
+            pino = 13
+            home.offDevice(pino)
+            msg1 = "Led foi apagado"
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
-    return jsonify(status=status_device)
+        return jsonify(status=status_device, msg=msg1)
 
 if __name__ == '__main__':
     #app.run(debug = True)
