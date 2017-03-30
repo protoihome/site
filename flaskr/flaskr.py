@@ -90,9 +90,9 @@ def devices():
       #estado = request.form['estado']
 
 	if id_ == 1:
-		dicionario = {"aparelhos": [{"id": 1, "nome": "Lampada 1", "status":0}, {"id": 2, "nome": "Lampada 2", "status":0}]}
+		dicionario = {"aparelhos": [{"pin": 13,"id":1, "nome": "Lampada 1", "status":0}, {"pin": 7,"id":2, "nome": "Lampada 2", "status":0}]}
 	if id_ == 2:
-		dicionario = {"aparelhos": [{"id": 3, "nome": "Lampada 3", "status":0}]}
+		dicionario = {"aparelhos": [{"pin":7,"id": 3, "nome": "Lampada 3", "status":0}]}
 	return jsonify(dicionario)	
         #return redirect(url_for('index'))
     #return jsonify(aparelhos=[dict(nome='teste',status=1,id=1),  dict(nome='teste2',status=0,id=2)])
