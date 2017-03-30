@@ -121,7 +121,7 @@ def swap():
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
-    return jsonify(status=status_device)
+    return jsonify(status=status_device)i3
 
 if __name__ == '__main__':
     #app.run(debug = True)
