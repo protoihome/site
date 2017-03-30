@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+
 from wiringx86 import GPIOGalileoGen2 as GPIO
 
 
@@ -21,3 +20,6 @@ class Device(object):
 
 	def offDevice(self, pin_):
 		return self.gpio.digitalWrite(pin_, self.gpio.LOW)
+
+	def getDevice(self, pin_):
+		return self.gpio.digitalRead(pin_)

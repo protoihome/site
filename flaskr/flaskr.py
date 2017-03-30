@@ -1,6 +1,7 @@
 # all the imports
 import os
 import sqlite3
+from classes import Home as home
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
 
@@ -113,11 +114,15 @@ def swap():
     if request.method == 'POST':
         #aparelho = request.form['id_ap']
         id_device = request.form['id']
-        status_device = request.form['status']
+        status_device = int(request.form['status'])
+        if (status_device):
+            pino = 13
+            home.Device.offDevice(pino)
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
-    return jsonify(status=status)
+    return jsonify(status=status_device)
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    #app.run(debug = True)
+    app.run(host='192.168.0.10', port=5000, debug=True)
