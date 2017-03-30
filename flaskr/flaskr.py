@@ -2,7 +2,7 @@
 import os
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash
+     render_template, flash, jsonify
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -78,7 +78,20 @@ def show_rooms():
     cur = db.execute('select name, descricao from room order by id desc')
     room = cur.fetchall()
     return render_template('show_rooms.html', room=room)
+##################################################################
+#########Funcao para receber a mandar o json para o aplicativo#########################
 
+@app.route('/devices',  methods=['POST', 'GET'])
+def devices():
+
+    if request.method == 'POST':
+        #aparelho = request.form['id_ap']
+        id_ = request.form['id']
+        estado = request.form['estado']
+        print id_
+        print estado
+        #return redirect(url_for('index'))
+    return jsonify(aparelhos=[dict(id=id_,status=estado),  dict(id=0,status=2)])
 
 if __name__ == '__main__':
     app.run(debug = True)
