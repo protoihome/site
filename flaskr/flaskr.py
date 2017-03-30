@@ -90,6 +90,7 @@ def devices():
       #estado = request.form['estado']
 
 	if id_ == 1:
+
 		dicionario = {"aparelhos": [{"id": 1, "nome": "Lampada 1", "status":0}, {"id": 2, "nome": "Lampada 2", "status":0}]}
 	if id_ == 2:
 		dicionario = {"aparelhos": [{"id": 3, "nome": "Lampada 3", "status":0}]}
@@ -114,6 +115,7 @@ def swap():
         #aparelho = request.form['id_ap']
         id_device = request.form['id']
         status_device = request.form['status']
+
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
     return jsonify(status=status)
