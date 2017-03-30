@@ -114,6 +114,7 @@ def swap():
         #aparelho = request.form['id_ap']
         id_device = request.form['id']
         status_device = request.form['status']
+
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
     return jsonify(status=status)
