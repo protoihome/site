@@ -79,19 +79,44 @@ def show_rooms():
     room = cur.fetchall()
     return render_template('show_rooms.html', room=room)
 ##################################################################
-#########Funcao para receber a mandar o json para o aplicativo#########################
+#########Funcao para mandar o json para o aplicativo com os dispositivos###############
 
 @app.route('/devices',  methods=['POST', 'GET'])
 def devices():
 
+	if request.method == 'POST':
+      #aparelho = request.form['id_ap']
+		id_ = int(request.form['id'])
+      #estado = request.form['estado']
+
+	if id_ == 1:
+		dicionario = {"aparelhos": [{"id": 1, "nome": "Lampada 1", "status":0}, {"id": 2, "nome": "Lampada 2", "status":0}]}
+	if id_ == 2:
+		dicionario = {"aparelhos": [{"id": 3, "nome": "Lampada 3", "status":0}]}
+	return jsonify(dicionario)	
+        #return redirect(url_for('index'))
+    #return jsonify(aparelhos=[dict(nome='teste',status=1,id=1),  dict(nome='teste2',status=0,id=2)])
+
+##################################################################
+###################Funcao para listar os comodos#############################
+
+@app.route('/room')
+def room():
+	return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
+
+################################################################
+##################Funcao para trocar o status do dispositivo#####################
+
+@app.route('/swap',  methods=['POST', 'GET'])
+def swap():
+
     if request.method == 'POST':
         #aparelho = request.form['id_ap']
-        id_ = request.form['id']
-        estado = request.form['estado']
-        print id_
-        print estado
+        id_device = request.form['id']
+        status_device = request.form['status']
+        #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
-    return jsonify(aparelhos=[dict(id=id_,status=estado),  dict(id=0,status=2)])
+    return jsonify(status=status)
 
 if __name__ == '__main__':
     app.run(debug = True)
