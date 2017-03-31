@@ -1,4 +1,6 @@
-# all the imports
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 ################ Bibliotecas utilizadas ##########################
 import os, sqlite3, socket
 from subprocess import Popen, PIPE
