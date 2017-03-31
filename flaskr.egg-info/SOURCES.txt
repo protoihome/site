@@ -8,6 +8,12 @@ flaskr.egg-info/SOURCES.txt
 flaskr.egg-info/dependency_links.txt
 flaskr.egg-info/requires.txt
 flaskr.egg-info/top_level.txt
+flaskr/classes/Home.py
+flaskr/classes/Home.pyc
+flaskr/classes/Home.pyo
+flaskr/classes/__init__.py
+flaskr/classes/__init__.pyc
+flaskr/classes/__init__.pyo
 flaskr/static/css/bootstrap-theme.css
 flaskr/static/css/bootstrap-theme.css.map
 flaskr/static/css/bootstrap-theme.min.css
