@@ -7,12 +7,6 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-####################################################################
-####################################################################
-####################################################################
-home = Home.Device(13)
-
-# Load default config and override config from an environment variable
 app.config.update(dict(
     DATABASE=os.path.join(app.root_path, 'ihome.db'),
     SECRET_KEY='development key',
@@ -20,6 +14,10 @@ app.config.update(dict(
     PASSWORD='default'
 ))
 app.config.from_envvar('FLASKR_SETTINGS', silent=True)
+####################################################################
+####################################################################
+####################################################################
+home = Home.Device(13)
 
 def connect_db():
     """Connects to the specific database."""
@@ -88,6 +86,7 @@ def devices():
 	if request.method == 'POST':
       #aparelho = request.form['id_ap']
 		id_ = int(request.form['id'])
+
       #estado = request.form['estado']
 
 	if id_ == 1:
