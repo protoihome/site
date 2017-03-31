@@ -134,6 +134,11 @@ def swap():
 @app.route('/comodos')
 def comdos():
 	return render_template('comodos.html')
+
+@app.route('/info')
+def info():
+    return render_template('info.html')
+
 if __name__ == '__main__':
     #app.run(debug = True)
     #Comando para buscar informações e filtrar o ip
