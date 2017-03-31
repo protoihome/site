@@ -1,8 +1,5 @@
 # all the imports
-#################################### importando
-from subprocess import Popen, PIPE
 import os
-import socket
 import sqlite3
 from classes import Home
 from flask import Flask, request, session, g, redirect, url_for, abort, \
@@ -58,7 +55,7 @@ def close_db(error):
         g.sqlite_db.close()
 ##################################################################
 #########Funcao de render do template index###################################
-@app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
 ##################################################################
@@ -121,18 +118,21 @@ def swap():
         if (status_device):
             pino = 13
             home.onDevice(pino)
+            msg1 = "Led foi ligado"
 
         if (status_device == 0):
             pino = 13
             home.offDevice(pino)
+            msg1 = "Led foi apagado"
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
-        return jsonify(status=status_device)
+        return jsonify(status=status_device, msg=msg1)
 
+@app.route('/banco')
+def banco():
+	init_db()
+	return redirect(url_for('index'))
 if __name__ == '__main__':
     #app.run(debug = True)
-    comando = "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'"
-    p = Popen(comando, shell=True, stdout=PIPE, stderr=PIPE)
-    IPAddr, err = p.communicate()
-    app.run(host=IPAddr, port=5000, debug=True,threaded=True)
+    app.run(host='10.1.14.13', port=5000, debug=True,threaded=True)
