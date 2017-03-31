@@ -1,12 +1,5 @@
-/*jshint browser:true */
-/*global $ */(function()
-{
- "use strict";
- /*
-   hook up event handlers 
- */
- function register_event_handlers()
- {
+$(document).ready(function() {
+
     
      var get = getRouteParameter();
      var id = get.id;
@@ -111,7 +104,7 @@
                         } else {
                             msg = 'Uncaught Error.\n' + jqXHR.responseText;
                         }
-                        navigator.notification.alert(msg);
+                       alert(msg);
                     },
                     complete: function(){
 //                        navigator.notification.alert("Completo!",  null, 'Resposta da Conexão', 'ok');
@@ -140,16 +133,11 @@
                         } else {
                             msg = 'Uncaught Error.\n' + jqXHR.responseText;
                         }
-                        navigator.notification.alert(msg);
+                        alert(msg);
         },
         complete: function(){
 //            navigator.notification.alert("Completo!",  null, 'Resposta da Conexão', 'ok');
         }
     });
-
-    
-    
-    
-    }
- document.addEventListener("app.Ready", register_event_handlers, false);
-})();
+    // body...
+});
