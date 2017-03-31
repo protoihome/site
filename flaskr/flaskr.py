@@ -131,10 +131,9 @@ def swap():
         #return redirect(url_for('index'))
         return jsonify(status=status_device, msg=msg1)
 
-@app.route('/banco')
-def banco():
-	init_db()
-	return redirect(url_for('index'))
+@app.route('/comodos')
+def comdos():
+	return render_template('comodos.html')
 if __name__ == '__main__':
     #app.run(debug = True)
     #Comando para buscar informações e filtrar o ip

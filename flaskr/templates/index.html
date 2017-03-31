@@ -6,8 +6,6 @@
 <head>
     <title>agressHome</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: cdvfile: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *">
-
 
     <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -82,7 +80,7 @@
                     <p>- Judison Godinho</p>
                     <p>- Sandro Oliveira</p>
                     <p>- Pedro Paulo</p>
-                    <p><a class="btn btn-info btn-block btn-lg" id="mais-info" href="info.html">Mais Informações</a></p>
+                    <p><a class="btn btn-info btn-block btn-lg" id="mais-info" href="{{url_for('template', filename='info.html')}}">Mais Informações</a></p>
                 </div>
                 
             </div>

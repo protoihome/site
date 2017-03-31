@@ -7,8 +7,6 @@
  */
  function register_event_handlers()
  {
-    
-    $('#menu .navbar-nav').append('<li><a href="configuracao.html">Configuração</a></li>');
      /* button  #alertar */
      var rota = "http://10.1.14.22:5000/room";
     
@@ -22,7 +20,7 @@
 
             for(var i = 0; i < result.room.length; i++) {
                
-                navli = navli + '<li><a href="comodos.html?id=' + result.room[i].id + '">' +  result.room[i].nome; + '</a></li>';
+                navli = navli + '<li><a href="/comodos?id=' + result.room[i].id + '">' +  result.room[i].nome; + '</a></li>';
                 
             }
 
