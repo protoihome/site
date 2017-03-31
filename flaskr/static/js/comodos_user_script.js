@@ -3,7 +3,7 @@ $(document).ready(function() {
     
      var get = getRouteParameter();
      var id = get.id;
-     
+     alert("asdasdasdsadsadadadadasdsadasdasdasdasd");
      $.ajax({
         url: "http://10.1.14.22:5000/devices",
         type: 'POST',

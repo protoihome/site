@@ -2,7 +2,7 @@ $(document).ready(function() {
 
      /* button  #alertar */
      var rota = "http://10.1.14.22:5000/room";
-    
+    alert("asdasdasdsadsadadadadasdsadasdasdasdasd");
     $.ajax({
         url: rota,
         dataType: "json",
