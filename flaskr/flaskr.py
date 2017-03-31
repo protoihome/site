@@ -1,6 +1,9 @@
-# all the imports
-import os
-import sqlite3
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+################ Bibliotecas utilizadas ##########################
+import os, sqlite3, socket
+from subprocess import Popen, PIPE
 from classes import Home
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
@@ -134,4 +137,10 @@ def banco():
 	return redirect(url_for('index'))
 if __name__ == '__main__':
     #app.run(debug = True)
-    app.run(host='10.1.14.13', port=5000, debug=True,threaded=True)
+    #Comando para buscar informações e filtrar o ip
+    cmd = "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'"
+    p = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
+    #Recebendo o IP que está na placa no eth0
+    AdressIP, err = p.communicate()
+    app.run(host=AdressIP, port=5000, debug=True,threaded=True)
+
