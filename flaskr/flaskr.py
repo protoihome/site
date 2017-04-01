@@ -129,7 +129,7 @@ def swap():
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
-        return jsonify(status=status_device, msg=msg1)
+        return jsonify(status=status_device)
 
 @app.route('/comodos')
 def comdos():

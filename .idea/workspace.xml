@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2130faf4-94a7-477d-ae07-1bbab5a7821d" name="Default" comment="" />
+    <list default="true" id="2130faf4-94a7-477d-ae07-1bbab5a7821d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
+    </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -21,13 +24,17 @@
     <favorites_list name="site" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="comodos_user_script.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js">
+    <leaf>
+      <file leaf-file-name="flaskr.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="123">
+              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+              <folding>
+                <element signature="e#110#136#0" expanded="true" />
+                <marker date="1491014695701" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+                <marker date="1491014695701" expanded="true" signature="2625:2674" ph="select name,... room" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,10 +54,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/flaskr/templates/index.html" />
         <option value="$PROJECT_DIR$/flaskr/classes/Home.py" />
         <option value="$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js" />
         <option value="$PROJECT_DIR$/flaskr/static/js/nav_get_comodos_script.js" />
+        <option value="$PROJECT_DIR$/flaskr/templates/index.html" />
+        <option value="$PROJECT_DIR$/flaskr/templates/comodos.html" />
+        <option value="$PROJECT_DIR$/flaskr/templates/info.html" />
         <option value="$PROJECT_DIR$/flaskr/flaskr.py" />
       </list>
     </option>
@@ -130,7 +139,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../webFlaskGalileo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AgressOficial" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
   </component>
@@ -428,14 +437,21 @@
       <option name="project" value="LOCAL" />
       <updated>1491085088074</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="No arquivos js não é necessario colocar a url toda apenas a rota">
+      <created>1491085949277</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1491085949277</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="729" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2840909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28863636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -486,8 +502,8 @@
           <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
-            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+            <marker date="1491014695701" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491014695701" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
@@ -496,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,8 +521,8 @@
           <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
-            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+            <marker date="1491014695701" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491014695701" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
@@ -516,7 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -526,8 +540,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
-            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+            <marker date="1491014695701" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491014695701" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
@@ -538,8 +552,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
-            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+            <marker date="1491014695701" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491014695701" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
@@ -550,8 +564,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
-            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+            <marker date="1491014695701" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491014695701" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
@@ -562,8 +576,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
-            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+            <marker date="1491014695701" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491014695701" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
@@ -577,13 +591,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/templates/dados.html" />
     <entry file="file://$PROJECT_DIR$/flaskr/templates/index - Copia.html" />
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/classes/Home.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9">
@@ -591,21 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/static/js/nav_get_comodos_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,9 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,27 +616,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+    <entry file="file://$PROJECT_DIR$/flaskr/static/js/nav_get_comodos_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
-            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/comodos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/classes/Banco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding>
+            <element signature="e#110#136#0" expanded="true" />
+            <marker date="1491014695701" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491014695701" expanded="true" signature="2625:2674" ph="select name,... room" />
+          </folding>
         </state>
       </provider>
     </entry>
