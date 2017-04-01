@@ -120,12 +120,12 @@ def swap():
         if (status_device):
             pino = 13
             home.onDevice(pino)
-            msg1 = "Led foi ligado"
+
 
         if (status_device == 0):
             pino = 13
             home.offDevice(pino)
-            msg1 = "Led foi apagado"
+
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))

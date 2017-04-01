@@ -4,6 +4,8 @@
     <list default="true" id="2130faf4-94a7-477d-ae07-1bbab5a7821d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js" afterPath="$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/static/js/nav_get_comodos_script.js" afterPath="$PROJECT_DIR$/flaskr/static/js/nav_get_comodos_script.js" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,32 +26,7 @@
     <favorites_list name="site" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flaskr.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="e#110#136#0" expanded="true" />
-                <marker date="1491001328452" expanded="true" signature="2238:2287" ph="insert into rooms... " />
-                <marker date="1491001328452" expanded="true" signature="2697:2746" ph="select name,... room" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/classes/Home.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,6 +43,8 @@
       <list>
         <option value="$PROJECT_DIR$/flaskr/templates/index.html" />
         <option value="$PROJECT_DIR$/flaskr/classes/Home.py" />
+        <option value="$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js" />
+        <option value="$PROJECT_DIR$/flaskr/static/js/nav_get_comodos_script.js" />
         <option value="$PROJECT_DIR$/flaskr/flaskr.py" />
       </list>
     </option>
@@ -107,7 +86,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,7 +132,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -172,12 +150,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -465,14 +448,21 @@
       <option name="project" value="LOCAL" />
       <updated>1491001134785</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="esqueci o condig UTF-8  portugues">
+      <created>1491001377128</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1491001377128</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="729" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2659091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2840909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -508,7 +498,8 @@
     <MESSAGE value="Testando na placa" />
     <MESSAGE value="Funcionando com as funcoes apagar e ligar led" />
     <MESSAGE value="Pegando ip automaticamente da placa e servindo nesse endereço" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pegando ip automaticamente da placa e servindo nesse endereço" />
+    <MESSAGE value="esqueci o condig UTF-8  portugues" />
+    <option name="LAST_COMMIT_MESSAGE" value="esqueci o condig UTF-8  portugues" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -517,12 +508,52 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding>
+            <element signature="e#110#136#0" expanded="true" />
+            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding>
+            <element signature="e#110#136#0" expanded="true" />
+            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491001328452" expanded="true" signature="2238:2287" ph="insert into rooms... " />
-            <marker date="1491001328452" expanded="true" signature="2697:2746" ph="select name,... room" />
+            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
@@ -533,8 +564,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491001328452" expanded="true" signature="2238:2287" ph="insert into rooms... " />
-            <marker date="1491001328452" expanded="true" signature="2697:2746" ph="select name,... room" />
+            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#110#136#0" expanded="true" />
+            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#110#136#0" expanded="true" />
+            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
@@ -546,26 +601,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/dados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1462">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/index - Copia.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-545">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/dados.html" />
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/index - Copia.html" />
     <entry file="file://$PROJECT_DIR$/flaskr/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,18 +614,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/static/js/nav_get_comodos_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/static/js/config_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/static/js/comodos_user_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/static/js/getRouteParameter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
             <element signature="e#110#136#0" expanded="true" />
-            <marker date="1491001328452" expanded="true" signature="2238:2287" ph="insert into rooms... " />
-            <marker date="1491001328452" expanded="true" signature="2697:2746" ph="select name,... room" />
+            <marker date="1491084895053" expanded="true" signature="2166:2215" ph="insert into rooms... " />
+            <marker date="1491084895053" expanded="true" signature="2625:2674" ph="select name,... room" />
           </folding>
         </state>
       </provider>
