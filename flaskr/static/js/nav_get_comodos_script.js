@@ -2,7 +2,7 @@ $(document).ready(function() {
 
      /* button  #alertar */
      var rota = "/room";
-   
+    //nao necessario url toda   
     $.ajax({
         url: rota,
         dataType: "json",

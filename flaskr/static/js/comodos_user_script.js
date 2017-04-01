@@ -3,7 +3,7 @@ $(document).ready(function() {
     
      var get = getRouteParameter();
      var id = get.id;
-     
+     //nao necessario a url toda no site
      $.ajax({
         url: "/devices",
         type: 'POST',
