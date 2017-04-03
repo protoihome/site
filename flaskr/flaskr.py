@@ -86,8 +86,7 @@ def add():
         dispositivos = Banco.Devices(name=request.form['dispositivo'],pin=request.form['pin'], device = comodos)
         db.session.add()
         db.session.commit()
-    else
-        return render_template('add.html')
+    return render_template('add.html')
 
 if __name__ == '__main__':
     #app.run(debug = True)
