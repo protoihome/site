@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add dispositivos</title>
+</head>
+<body>
+	<div class="row">
+	  <div class="corpo">
+	  	<form class="form-horizontal" action = "http://localhost:5000/env" method = "POST">
+			<div class="form-group">
+					<div class=" div-input col-sm-12">
+					<input type="text" class="input form-control" id="inputEmail3" placeholder="Nome da sala" name="sala">
+					<input type="number" class="input form-control" id="inputEmail1" placeholder="Nome do dispositivo" name="dispositivo" min = "1" max = "32">
+					<input type="number" class="input form-control" id="inputEmail1" placeholder="Pin" name="pin" min = "1" max = "32">
+				</div>
+			</div>
+			<div class="form-group">
+    				<div class="text-center col-sm-12">
+      					<button type="submit" class="btn btn-default">Entrar</button>
+    				</div>
+  			</div>
+	      </form>
+	  </div>
+	</div>
+</body>
+</html>
