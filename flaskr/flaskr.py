@@ -33,7 +33,6 @@ def devices():
 	if request.method == 'POST':
       #aparelho = request.form['id_ap']
 		id_ = int(request.form['id'])
-                         dispositivo.
 		dicionario = {"aparelhos": [{"pin":7,"id": 3, "nome": "Lampada 3", "status":0}]}
 	return jsonify(dicionario)	
         #return redirect(url_for('index'))
