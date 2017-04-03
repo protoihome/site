@@ -8,8 +8,12 @@ from classes import Home, Banco
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
 
+###################################################################     
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.sqlite3'
+app.config['SECRET_KEY'] = "random string"
+db = SQLAlchemy(app)
 ####################################################################
 ####################################################################
 ####################################################################
@@ -78,9 +82,11 @@ def info():
 def add():
     if request.method == 'POST':
         comodos = Banco.Rooms(name=request.form['sala'])
-        comodos.adicionar(comodos)
+        db.session.add(comodos)
+        db.session.commit()
         dispositivos = Banco.Devices(name=request.form['dispositivo'],pin=request.form['pin'], device = comodos)
-        dispositivos.adicionar(dispositivos)
+        db.session.add(dispositivos)
+        db.session.commit()
     return render_template('add.html')
 
 if __name__ == '__main__':
