@@ -10,15 +10,12 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ihome.sqlite3'
-app.config['SECRET_KEY'] = "random string"
-db = SQLAlchemy(app)
 ####################################################################
 ####################################################################
 ####################################################################
 home = Home.Device(13)
-comodos = Banco.Rooms(db.model)
-dispositivos = Banco.Devices(db.model)
+comodos = Banco.Rooms()
+dispositivos = Banco.Devices()
 ##################################################################
 #########Funcao de render do template index###################################
 @app.route('/index')
@@ -81,11 +78,9 @@ def info():
 def add():
     if request.method == 'POST':
         comodos = Banco.Rooms(name=request.form['sala'])
-        db.session.add(comodos)
-        db.session.commit()
+        comodos.adicionar(comodos)
         dispositivos = Banco.Devices(name=request.form['dispositivo'],pin=request.form['pin'], device = comodos)
-        db.session.add()
-        db.session.commit()
+        dispositivos.adicionar(dispositivos)
     return render_template('add.html')
 
 if __name__ == '__main__':
