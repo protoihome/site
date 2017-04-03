@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from flask_sqlalchemy import SQLAlchemy
-db = SQLAlchemy(app)
 
 class Rooms(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
