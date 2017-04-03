@@ -17,8 +17,8 @@ db = SQLAlchemy(app)
 ####################################################################
 ####################################################################
 home = Home.Device(13)
-comodos = Banco.Rooms(db)
-dispositivos = Banco.Devices(db)
+comodos = Banco.Rooms(db.model)
+dispositivos = Banco.Devices(db.model)
 ##################################################################
 #########Funcao de render do template index###################################
 @app.route('/index')
