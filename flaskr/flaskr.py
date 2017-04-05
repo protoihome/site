@@ -108,7 +108,7 @@ if __name__ == '__main__':
     #app.run(debug = True)
     #Comando para buscar informações e filtrar o ip
     db.create_all()
-    db.session.commit()
+    #db.session.commit()
     cmd = "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'"
     p = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
     #Recebendo o IP que está na placa no eth0
