@@ -19,16 +19,16 @@ db = SQLAlchemy(app)
 ##############################Classes importantes##########################
 
 class Rooms(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id_ = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
     addresses = db.relationship('Devices', backref='device', lazy='dynamic')
 
 class Devices(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id_ = db.Column(db.Integer, primary_key=True)
     pin = db.Column(db.String(50))
     name = db.Column(db.Integer)
     status = db.Column(db.String(30))
-    id_room = db.Column(db.Integer, db.ForeignKey('device.id'))
+    id_room = db.Column(db.Integer, db.ForeignKey('device.id_'))
 
 ####################################################################
 ####################################################################
