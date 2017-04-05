@@ -46,7 +46,7 @@ def index():
 @app.route('/devices',  methods=['POST', 'GET'])
 def devices():
 
-	if request.method == 'POST':
+	if request.method == 'GET':
       #aparelho = request.form['id_ap']
                 id_ = int(request.form['id'])
                 disp = Devices.query.filter_by(id_room = id_)
