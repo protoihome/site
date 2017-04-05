@@ -96,10 +96,10 @@ def info():
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     if request.method == 'POST':
-        comodos = Banco.Rooms(name=request.form['sala'])
+        comodos = Rooms(name=request.form['sala'])
         db.session.add(comodos)
         db.session.commit()
-        dispositivos = Banco.Devices(name=request.form['dispositivo'],pin=request.form['pin'], device = comodos)
+        dispositivos = Devices(name=request.form['dispositivo'],pin=request.form['pin'], device = comodos)
         db.session.add(dispositivos)
         db.session.commit()
     return render_template('add.html')
