@@ -28,7 +28,7 @@ class Devices(db.Model):
     pin = db.Column(db.String(50))
     name = db.Column(db.Integer)
     status = db.Column(db.Integer)
-    id_room = db.Column(db.Integer, db.ForeignKey('device.id_'))
+    id_room = db.Column(db.Integer, db.ForeignKey('devices.id_'))
 
 ####################################################################
 ####################################################################
