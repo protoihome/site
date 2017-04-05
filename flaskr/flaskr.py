@@ -4,7 +4,7 @@
 ################ Bibliotecas utilizadas ##########################
 import os, sqlite3, socket
 from subprocess import Popen, PIPE
-from classes import Home, Banco
+from classes import Home
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
@@ -16,10 +16,25 @@ app.config['SECRET_KEY'] = "random string"
 db = SQLAlchemy(app)
 ####################################################################
 ####################################################################
+##############################Classes importantes##########################
+
+class Rooms(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50))
+    addresses = db.relationship('Devices', backref='device', lazy='dynamic')
+
+class Devices(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    pin = db.Column(db.String(50))
+    name = db.Column(db.Integer)
+    status = db.Column(db.String(30))
+    id_room = db.Column(db.Integer, db.ForeignKey('device.id'))
+
+####################################################################
 ####################################################################
 home = Home.Device(13)
-comodos = Banco.Rooms()
-dispositivos = Banco.Devices()
+#comodos = Banco.Rooms()
+#dispositivos = Banco.Devices()
 ##################################################################
 #########Funcao de render do template index###################################
 @app.route('/index')

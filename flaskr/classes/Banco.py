@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from ..flaskr import flaskr
+#from ..flaskr import flaskr
 '''app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.sqlite3'
 app.config['SECRET_KEY'] = "random string"
@@ -12,7 +12,7 @@ class Request():
 		db.session.add(comodo)
 		db.session.commit()
 '''
-class Rooms(db.Model): 
+class Rooms(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	name = db.Column(db.String(50))
 	addresses = db.relationship('Devices', backref='device', lazy='dynamic')
