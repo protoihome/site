@@ -27,7 +27,7 @@ class Devices(db.Model):
     id_ = db.Column(db.Integer, primary_key=True)
     pin = db.Column(db.String(50))
     name = db.Column(db.Integer)
-    status = db.Column(db.String(30))
+    status = db.Column(db.Integer)
     id_room = db.Column(db.Integer, db.ForeignKey('device.id_'))
 
 ####################################################################
@@ -99,7 +99,7 @@ def add():
         comodos = Rooms(name=request.form['sala'])
         db.session.add(comodos)
         db.session.commit()
-        dispositivos = Devices(name=request.form['dispositivo'],pin=request.form['pin'], device = comodos)
+        dispositivos = Devices(name=request.form['dispositivo'],pin=request.form['pin'],status=0, device = comodos)
         db.session.add(dispositivos)
         db.session.commit()
     return render_template('add.html')
