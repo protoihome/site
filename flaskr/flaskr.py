@@ -99,7 +99,7 @@ def add():
         comodos = Rooms(name=request.form['sala'])
         db.session.add(comodos)
         db.session.commit()
-        dispositivos = Devices(name=request.form['dispositivo'],pin=request.form['pin'],status=0, device = comodos)
+        dispositivos = Devices(name=request.form['dispositivo'],pin=request.form['pin'],status=0, device=comodos)
         db.session.add(dispositivos)
         db.session.commit()
     return render_template('add.html')
@@ -108,7 +108,7 @@ if __name__ == '__main__':
     #app.run(debug = True)
     #Comando para buscar informações e filtrar o ip
     db.create_all()
-    #db.session.commit()
+    db.session.commit()
     cmd = "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'"
     p = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
     #Recebendo o IP que está na placa no eth0
