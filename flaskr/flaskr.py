@@ -48,7 +48,7 @@ def devices():
 
 	if request.method == 'GET':
       #aparelho = request.form['id_ap']
-                id_ = int(request.form['id'])
+                id_ = 1#int(request.form['id'])
                 disp = Devices.query.filter_by(id_room = id_)
 
                 #dicionario = {"aparelhos": [{"pin":disp['pin'],"id": disp['id'], "nome":disp['name'], "status":disp['']}]}
