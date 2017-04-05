@@ -49,9 +49,10 @@ def devices():
 	if request.method == 'POST':
       #aparelho = request.form['id_ap']
                 id_ = int(request.form['id'])
-                Devices.query.filter_by(id = id_)
-                dicionario = {"aparelhos": [{"pin":7,"id": 3, "nome": "Lampada 3", "status":0}]}
-	return jsonify(dicionario)	
+                disp = Devices.query.filter_by(id_room = id_)
+
+                #dicionario = {"aparelhos": [{"pin":disp['pin'],"id": disp['id'], "nome":disp['name'], "status":disp['']}]}
+	return jsonify(aparelhos=disp)
         #return redirect(url_for('index'))
     #return jsonify(aparelhos=[dict(nome='teste',status=1,id=1),  dict(nome='teste2',status=0,id=2)])
 
