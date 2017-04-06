@@ -140,8 +140,8 @@ def add():
     c = Rooms.query.all()
     comodos = []
     for i in c:
-      comodos.dict(id=i.id_,nome=i.name)  
-    return render_template('add_device.html', comodo = comodos)
+      comodos.append(dict(id=i.id_,nome=i.name))   
+    return render_template('add_device.html', comodo = c)
 
 if __name__ == '__main__':
     #app.run(debug = True)

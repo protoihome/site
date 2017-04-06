@@ -11,7 +11,7 @@
 					<div class=" div-input col-sm-12">
 					<select>
 						<option value="">Selecione o cômodo</option>
-						{% for key, value in comodo.items() %}
+						{% for key, value in comodo.iteritems() %}
 							<option value="{{ key }}">{{ value }}</option>
 						{% endfor %}
 					</select>
