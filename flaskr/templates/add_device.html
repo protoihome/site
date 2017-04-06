@@ -11,8 +11,8 @@
 					<div class=" div-input col-sm-12">
 					<select>
 						<option value="">Selecione o cômodo</option>
-						{% for key, value in comodo %}
-							<option value="{{key.id}}">{{key.nome}}</option>
+						{% for key, value in comodo.iteritems() %}
+							<option value="{{ key }}">{{ value }}</option>
 						{% endfor %}
 					</select>
 					<input type="text" class="input form-control" id="inputEmail1" placeholder="Nome do dispositivo" name="dispositivo" min = "1" max = "32">
