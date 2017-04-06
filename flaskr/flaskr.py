@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 
 ################ Bibliotecas utilizadas ##########################
-import os, sqlite3, socket
+import os, sqlite3, socket,json
 from subprocess import Popen, PIPE
 from classes import Home
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy, DeclarativeMeta
+from flask_sqlalchemy import DeclarativeMeta
 ###################################################################     
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -17,6 +18,7 @@ db = SQLAlchemy(app)
 ####################################################################
 ####################################################################
 ##############################Classes importantes##########################
+
 
 class Rooms(db.Model):
     id_ = db.Column(db.Integer, primary_key=True)
@@ -30,6 +32,22 @@ class Devices(db.Model):
     status = db.Column(db.Integer)
     id_room = db.Column(db.Integer, db.ForeignKey('rooms.id_'))
 
+class AlchemyEncoder(json.JSONEncoder):
+    def default(self, obj):
+	    if isinstance(obj.__class__, DeclarativeMeta):
+	        # an SQLAlchemy class
+	        fields = {}
+	        for field in [x for x in dir(obj) if not x.startswith('_') and x != 'metadata']:
+	            data = obj.__getattribute__(field)
+	            try:
+	                json.dumps(data) # this will fail on non-encodable values, like other classes
+	                fields[field] = data
+	            except TypeError:
+	                fields[field] = None
+	        # a json-encodable dict
+	        return fields
+
+	    return json.JSONEncoder.default(self, obj)
 ####################################################################
 ####################################################################
 home = Home.Device(13)
@@ -46,13 +64,14 @@ def index():
 @app.route('/devices',  methods=['POST', 'GET'])
 def devices():
 
-	if request.method == 'POST':
-      #aparelho = request.form['id_ap']
-                id_ = 1#int(request.form['id'])
-                disp = Devices.query.filter_by(id_room = id_)
+	'''if request.method == 'POST':
+		id_ = 1#int(request.form['id'])
+        disp = Devices.query.filter_by(id_room = id_)
 
-                #dicionario = {"aparelhos": [{"pin":disp['pin'],"id": disp['id'], "nome":disp['name'], "status":disp['']}]}
-	return jsonify(aparelhos=disp)
+        #dicionario = {"aparelhos": [{"pin":disp['pin'],"id": disp['id'], "nome":disp['name'], "status":disp['']}]}
+'''
+	disp = Devices.query.all()
+	return json.dumps(disp, cls=AlchemyEncoder)
         #return redirect(url_for('index'))
     #return jsonify(aparelhos=[dict(nome='teste',status=1,id=1),  dict(nome='teste2',status=0,id=2)])
 
@@ -61,7 +80,9 @@ def devices():
 
 @app.route('/room')
 def room():
-	return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
+    c = Rooms.query.all()
+    return json.dumps(c, cls=AlchemyEncoder)
+	#return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
 
 ################################################################
 ##################Funcao para trocar o status do dispositivo#####################
