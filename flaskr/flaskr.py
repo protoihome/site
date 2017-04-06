@@ -32,22 +32,6 @@ class Devices(db.Model):
     status = db.Column(db.Integer)
     id_room = db.Column(db.Integer, db.ForeignKey('rooms.id_'))
 
-class AlchemyEncoder(json.JSONEncoder):
-    def default(self, obj):
-	    if isinstance(obj.__class__, DeclarativeMeta):
-	        # an SQLAlchemy class
-	        fields = {}
-	        for field in [x for x in dir(obj) if not x.startswith('_') and x != 'metadata']:
-	            data = obj.__getattribute__(field)
-	            try:
-	                json.dumps(data) # this will fail on non-encodable values, like other classes
-	                fields[field] = data
-	            except TypeError:
-	                fields[field] = None
-	        # a json-encodable dict
-	        return fields
-
-	    return json.JSONEncoder.default(self, obj)
 ####################################################################
 ####################################################################
 home = Home.Device(13)
@@ -103,6 +87,7 @@ def room():
 def swap():
 
     if request.method == 'POST':
+
         #aparelho = request.form['id_ap']
         id_device = request.form['id']
         status_device = int(request.form['estado'])
@@ -152,5 +137,5 @@ if __name__ == '__main__':
     p = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
     #Recebendo o IP que está na placa no eth0
     AdressIP, err = p.communicate()
-    app.run(host=AdressIP, port=5000, debug=True,threaded=True)
+    app.run(host=AdressIP, port=5000, debug=True, threaded=True)
 
