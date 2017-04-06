@@ -90,10 +90,11 @@ def swap():
 
         #aparelho = request.form['id_ap']
         id_device = request.form['id']
+        print id_device
         device = Devices.query.filter_by(id_ = id_device)
         status_device = int(request.form['estado'])
-
-        pino = int(device['pin'])
+        pino = (dev.__dict__.get('pin') for dev in device)
+        print int(pino)
         home = Home.Device(pino)
         if (status_device):
             home.onDevice(pino)
