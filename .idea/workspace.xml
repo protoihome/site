@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2130faf4-94a7-477d-ae07-1bbab5a7821d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -487,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491492493296</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="estrutura comodos jsonify">
+      <created>1491503083412</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1491503083412</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -534,7 +540,8 @@
     <MESSAGE value="No arquivos js não é necessario colocar a url toda apenas a rota" />
     <MESSAGE value="ultimo de hoje" />
     <MESSAGE value="json enviando" />
-    <option name="LAST_COMMIT_MESSAGE" value="json enviando" />
+    <MESSAGE value="estrutura comodos jsonify" />
+    <option name="LAST_COMMIT_MESSAGE" value="estrutura comodos jsonify" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
