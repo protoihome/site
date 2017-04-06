@@ -94,12 +94,10 @@ def room():
     c = Rooms.query.all()
     #dispositivos = {}
     for i in c:
-	    comodos = append(dict(nome=i.name, status=0, id=i.id_))
+	    comodos.append(dict(nome=i.name, status=0, id=i.id_))
 	    print i.name
     #d = json.dumps(c, cls=AlchemyEncoder)
-    return jsonify(comodos)
-
-append(#######################################)#########################
+    return jsonify(comodos)#######################################)#########################
 ##################Funcao para trocar o status do dispositivo#####################
 
 @app.route('/swap',  methods=['POST', 'GET'])
