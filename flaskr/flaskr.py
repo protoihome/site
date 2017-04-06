@@ -34,7 +34,7 @@ class Devices(db.Model):
 
 ####################################################################
 ####################################################################
-home = Home.Device(13)
+
 #comodos = Banco.Rooms()
 #dispositivos = Banco.Devices()
 ##################################################################
@@ -92,13 +92,16 @@ def swap():
         id_device = request.form['id']
         device = Devices.query.filter_by(id_ = id_device)
         status_device = int(request.form['estado'])
+
+        pino = device.__dict__.get('pin')
+        print pino
+        int(pino)
+        home = Home.Device(pino)
         if (status_device):
-            pino = int(device.__dict__.get('pin'))
             home.onDevice(pino)
 
 
         if (status_device==0):
-            pino = int(device.__dict__.get('pin'))
             home.offDevice(pino)
 
 
