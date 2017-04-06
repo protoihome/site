@@ -138,9 +138,9 @@ def add():
         db.session.add(dispositivos)
         db.session.commit()
     c = Rooms.query.all()
-    comodos = {}
+    comodos = []
     for i in c:
-      comodos.append(dict(id=i.id_,nome=i.name))   
+      comodos.dict(id=i.id_,nome=i.name)  
     return render_template('add_device.html', comodo = comodos)
 
 if __name__ == '__main__':
