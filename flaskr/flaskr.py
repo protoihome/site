@@ -91,7 +91,7 @@ def devices():
 
 @app.route('/room')
 def room():
-    c = Rooms.query.filter_by(id_ = 1).all()
+    c = Rooms.query.all()
     #dispositivos = {}
     for i in c:
 	    dispositivos = [dict(nome=i.name, status=0, id=i.id_)]
