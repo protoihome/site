@@ -85,7 +85,7 @@ def room():
     c = Rooms.query.all()
     
     #return json.dumps(c, cls=AlchemyEncoder)
-    return pprint(getmembers(c))
+    return pprint(c)
 	#return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
 
 ################################################################
