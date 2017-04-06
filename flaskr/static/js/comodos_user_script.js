@@ -11,21 +11,21 @@ $(document).ready(function() {
         dataType: "json",
         success: function(result){
         
-            var content = '<div class="col-xs-12"><h3> Lista de Aparelhos</h3></div>';
+            var content = '<div class="col-xs-12"><h3> '+ result[0].comodo + ' </h3></div>';
             var nome = "";
             var dispositivo = "";
             var button = "";
             var acao = "";
-    
-            for(var i = 0; i < result.aparelhos.length; i++) {
+            var aparelhos = result[i].aparelhos;
+            for(var i = 0; i < aparelhos.length; i++) {
 
-                nome = '<h5>' + result.aparelhos[i].nome + '</h5>';
+                nome = '<h5>' + aparelhos[i].nome + '</h5>';
 
                 dispositivo = '<h1><i class="glyphicon glyphicon-lamp"></i></h1>';
 
-                if(result.aparelhos[i].status == 1) {
+                if(aparelhos[i].status == 1) {
 
-                    button = '<button class="btn btn-default btn-block btn-lg btn-equipamento btn-on" data-estado="0" data-id="' + result.aparelhos[i].id + '">';
+                    button = '<button class="btn btn-default btn-block btn-lg btn-equipamento btn-on" data-estado="0" data-id="' + aparelhos[i].id + '">';
 
                     status = '<p class="status">status: <span class="text-success">Ligado</span></p>';
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
                 } else {
 
-                    button = '<button class="btn btn-default btn-block btn-lg btn-equipamento btn-off" data-estado="1" data-id="' + result.aparelhos[i].id + '">';
+                    button = '<button class="btn btn-default btn-block btn-lg btn-equipamento btn-off" data-estado="1" data-id="' + aparelhos[i].id + '">';
 
                     status = '<p class="status">status: <span class="text-danger">Desligado</span></p>';
 

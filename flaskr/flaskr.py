@@ -94,12 +94,12 @@ def room():
     c = Rooms.query.all()
     #dispositivos = {}
     for i in c:
-	    dispositivos = [dict(nome=i.name, status=0, id=i.id_)]
+	    comodos = append(dict(nome=i.name, status=0, id=i.id_))
 	    print i.name
     #d = json.dumps(c, cls=AlchemyEncoder)
-    return jsonify(dispositivos)
+    return jsonify(comodos)
 
-################################################################
+append(#######################################)#########################
 ##################Funcao para trocar o status do dispositivo#####################
 
 @app.route('/swap',  methods=['POST', 'GET'])
@@ -131,7 +131,7 @@ def comdos():
 def info():
     return render_template('info.html')
 
-@app.route('/add', methods=['GET', 'POST'])
+@app.route('/add_device', methods=['GET', 'POST'])
 def add():
     if request.method == 'POST':
         comodos = Rooms(name=request.form['sala'])

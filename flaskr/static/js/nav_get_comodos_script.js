@@ -11,9 +11,9 @@ $(document).ready(function() {
             var navli = "";
           
 
-            for(var i = 0; i < result.room.length; i++) {
+            for(var i = 0; i < result.length; i++) {
                
-                navli = navli + '<li><a href="/comodos?id=' + result.room[i].id + '">' +  result.room[i].nome; + '</a></li>';
+                navli = navli + '<li><a href="/comodos?id=' + result[i].id + '">' +  result[i].nome; + '</a></li>';
                 
             }
 
