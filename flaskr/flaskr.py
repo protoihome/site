@@ -63,6 +63,7 @@ def devices():
 
 		#	if i.id_ == request.form['id']:
 			dispositivos.append(dict(id=i.id_,name=i.name,status=i.status))
+			print i.name
 		# d = json.dumps(c, cls=AlchemyEncoder)
 		return jsonify([{'comodo':c.__dict__.get('name') for c in comodo},{"aparelhos": dispositivos }])
 	#return json.dumps(disp, cls=AlchemyEncoder)
@@ -98,7 +99,7 @@ def swap():
 
 
         if not (status_device):
-            pino = device.pina
+            pino = device.pin
             home.offDevice(pino)
 
 
