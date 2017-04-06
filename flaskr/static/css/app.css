@@ -35,6 +35,11 @@
     margin-bottom: 20px;
     
 }
+.btn-edit{
+    margin-bottom: -50px;
+    margin-right: 21px;
+    z-index: 1;
+}
 
 footer{
     position: fixed;
