@@ -64,13 +64,13 @@ def index():
 @app.route('/devices',  methods=['POST', 'GET'])
 def devices():
 
-	'''if request.method == 'POST':
+	if request.method == 'POST':
 		id_ = 1#int(request.form['id'])
-        disp = Devices.query.filter_by(id_room = id_)
+             disp = Devices.query.filter_by(id_room = id_)
 
         #dicionario = {"aparelhos": [{"pin":disp['pin'],"id": disp['id'], "nome":disp['name'], "status":disp['']}]}
-'''
-	disp = Devices.query.all()
+
+	'''disp = Devices.query.all()'''
 	return json.dumps(disp, cls=AlchemyEncoder)
         #return redirect(url_for('index'))
     #return jsonify(aparelhos=[dict(nome='teste',status=1,id=1),  dict(nome='teste2',status=0,id=2)])
