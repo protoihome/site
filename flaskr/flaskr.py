@@ -1,17 +1,14 @@
 #!/usr/bin/python
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 ################ Bibliotecas utilizadas ##########################
-import os, sqlite3, socket,json
+
 from subprocess import Popen, PIPE
 from classes import Home
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
-from flask_sqlalchemy import SQLAlchemy, DeclarativeMeta
-from flask_sqlalchemy import DeclarativeMeta
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
+from flask_sqlalchemy import SQLAlchemy
+
 ###################################################################     
 app = Flask(__name__)
 app.config.from_object(__name__)
