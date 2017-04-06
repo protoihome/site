@@ -81,7 +81,7 @@ def devices():
 @app.route('/room')
 def room():
     c = Rooms.query.all()
-    print c
+    print str(c)
     return json.dumps(c, cls=AlchemyEncoder)
 	#return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
 
