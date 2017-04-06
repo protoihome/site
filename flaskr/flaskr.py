@@ -93,12 +93,12 @@ def swap():
         device = Devices.query.filter_by(id_ = id_device)
         status_device = int(request.form['estado'])
         if (status_device):
-            pino = device.__dict__.get('pin')
+            pino = int(device.__dict__.get('pin'))
             home.onDevice(pino)
 
 
-        if not (status_device):
-            pino = device.__dict__.get('pin')
+        if (status_device==0):
+            pino = int(device.__dict__.get('pin'))
             home.offDevice(pino)
 
 
