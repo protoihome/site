@@ -77,8 +77,9 @@ def devices():
 def room():
     c = Rooms.query.all()
     comodos = []
-    for i in c:
-	    comodos.append(dict(id=i.id_,nome=i.name))
+    if c:
+        for i in c:
+            comodos.append(dict(id=i.id_,nome=i.name))
     return jsonify(comodos)
 #######################################)#########################
 ##################Funcao para trocar o status do dispositivo#####################
