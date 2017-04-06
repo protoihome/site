@@ -91,14 +91,15 @@ def swap():
 
         #aparelho = request.form['id_ap']
         id_device = request.form['id']
+        device = Devices.query.filter_by(id_ = id_device)
         status_device = int(request.form['estado'])
         if (status_device):
-            pino = 13
+            pino = device.pin
             home.onDevice(pino)
 
 
-        if (status_device == 0):
-            pino = 13
+        if not (status_device):
+            pino = device.pin
             home.offDevice(pino)
 
 
