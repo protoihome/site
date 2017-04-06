@@ -92,7 +92,7 @@ def devices():
 @app.route('/room')
 def room():
     c = Rooms.query.all()
-    #dispositivos = {}
+    comodos = []
     for i in c:
 	    comodos.append(dict(id=i.id_,nome=i.name))
     #d = json.dumps(c, cls=AlchemyEncoder)
