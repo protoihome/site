@@ -84,7 +84,7 @@ def room():
     #c = Rooms.query.all()
     dicionario = [{'comodo':'Sala'},{"aparelhos": [{"pin": 13,"id":1, "nome": "Lampada 1", "status":0}]}]
     #return json.dumps(c, cls=AlchemyEncoder)
-    return dicionario
+    return jsonify(dicionario)
 	#return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
 
 ################################################################
