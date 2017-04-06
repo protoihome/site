@@ -99,7 +99,7 @@ def swap():
 
 
         if not (status_device):
-            pino = device.pin
+            pino = device.pina
             home.offDevice(pino)
 
 
