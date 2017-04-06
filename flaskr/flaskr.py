@@ -65,8 +65,8 @@ def index():
 def devices():
 
 	if request.method == 'POST':
-		id_ = 1#int(request.form['id'])
-             disp = Devices.query.filter_by(id_room = id_)
+                id_ = 1#int(request.form['id'])
+                disp = Devices.query.filter_by(id_room = id_)
 
         #dicionario = {"aparelhos": [{"pin":disp['pin'],"id": disp['id'], "nome":disp['name'], "status":disp['']}]}
 
