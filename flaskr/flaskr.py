@@ -83,8 +83,9 @@ def devices():
 @app.route('/room')
 def room():
     c = Rooms.query.all()
-    pprint(getmembers(c))
+    
     #return json.dumps(c, cls=AlchemyEncoder)
+    return pprint(getmembers(c))
 	#return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
 
 ################################################################
