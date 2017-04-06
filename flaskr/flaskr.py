@@ -84,7 +84,7 @@ def room():
     c = Rooms.query.all()
     
     #return json.dumps(c, cls=AlchemyEncoder)
-    return dir(c)
+    return type(c)
 	#return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
 
 ################################################################
