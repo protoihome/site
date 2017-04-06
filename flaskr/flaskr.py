@@ -137,7 +137,8 @@ def add():
         dispositivos = Devices(name=request.form['dispositivo'],pin=request.form['pin'],status=0, rooms=comodos)
         db.session.add(dispositivos)
         db.session.commit()
-    return render_template('add.html')
+    c = Rooms.query.all()    
+    return render_template('add_device.html', comodo = c)
 
 if __name__ == '__main__':
     #app.run(debug = True)
