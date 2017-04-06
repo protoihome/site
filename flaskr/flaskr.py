@@ -129,16 +129,21 @@ def info():
     return render_template('info.html')
 
 @app.route('/add_device', methods=['GET', 'POST'])
-def add():
+def add_device():
     if request.method == 'POST':
-        comodos = Rooms(name=request.form['sala'])
-        db.session.add(comodos)
-        db.session.commit()
-        dispositivos = Devices(name=request.form['dispositivo'],pin=request.form['pin'],status=0, rooms=comodos)
+        dispositivos = Devices(name=request.form['dispositivo'],pin=request.form['pin'],status=0, id_room=request.form['cm'])
         db.session.add(dispositivos)
         db.session.commit() 
     return render_template('add_device.html', comodo = Rooms.query.all())
 
+@app.route('/add_room', methods=['GET', 'POST'])
+def add_room():
+	if request.method == 'POST':
+
+	  	comodos = Rooms(name=request.form['sala'])
+			db.session.add(comodos)
+			db.session.commit()
+	return render_template('add_room.html')		
 if __name__ == '__main__':
     #app.run(debug = True)
     #Comando para buscar informações e filtrar o ip
