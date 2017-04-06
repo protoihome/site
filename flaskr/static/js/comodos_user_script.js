@@ -19,7 +19,7 @@ $(document).ready(function() {
             var edit = "";
             var aparelhos = result[1].aparelhos;
             for(var i = 0; i < aparelhos.length; i++) {
-                edit = '<div class="row"><a href="/edit_device?id='+aparelhos[i].id+'" class="btn btn-xs btn-default "><i class="glyphicon glyphicon-pencil"></a></div>';
+                edit = '<div class="row text-right"><a href="/edit_device?id='+aparelhos[i].id+'" class="btn btn-xs btn-default "><i class="glyphicon glyphicon-pencil"></i></a></div>';
                 nome = '<h5>' + aparelhos[i].name + '</h5>';
 
                 dispositivo = '<h1><i class="glyphicon glyphicon-lamp"></i></h1>';
