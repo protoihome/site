@@ -139,7 +139,7 @@ def add_device():
 @app.route('/add_room', methods=['GET', 'POST'])
 def add_room():
 	if request.method == 'POST':
-		comodos = Rooms(name=request.form['sala'])
+		comodos = Rooms(name=request.form['comodo'])
 		db.session.add(comodos)
 		db.session.commit()
 	return render_template('add_room.html')		
