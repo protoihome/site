@@ -31,8 +31,8 @@
       <file leaf-file-name="flaskr.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+            <state relative-caret-position="135">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding>
                 <element signature="e#111#145#0" expanded="true" />
               </folding>
@@ -731,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491520704427</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="pinagem repete3">
+      <created>1491521895106</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1491521895106</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1081,8 +1088,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+        <state relative-caret-position="135">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="e#111#145#0" expanded="true" />
           </folding>
