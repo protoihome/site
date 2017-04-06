@@ -9,6 +9,7 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy, DeclarativeMeta
 from flask_sqlalchemy import DeclarativeMeta
+import struct
 ###################################################################     
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -83,7 +84,7 @@ def room():
     c = Rooms.query.all()
     
     #return json.dumps(c, cls=AlchemyEncoder)
-    return dump(c)
+    return dir(c)
 	#return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
 
 ################################################################
