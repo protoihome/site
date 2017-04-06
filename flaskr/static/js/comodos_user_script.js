@@ -16,9 +16,10 @@ $(document).ready(function() {
             var dispositivo = "";
             var button = "";
             var acao = "";
-            var aparelhos = result[i].aparelhos;
+            var edit = "";
+            var aparelhos = result[1].aparelhos;
             for(var i = 0; i < aparelhos.length; i++) {
-
+                edit = '<div class="row text-right"><a href="/edit_device?id='+aparelhos[i].id+'" class="btn btn-xs btn-link "><i class="glyphicon glyphicon-pencil"></div>'
                 nome = '<h5>' + aparelhos[i].nome + '</h5>';
 
                 dispositivo = '<h1><i class="glyphicon glyphicon-lamp"></i></h1>';
@@ -42,7 +43,7 @@ $(document).ready(function() {
                 }
 
 
-                content = content + '<div class="col-xs-12 col-sm-6 col-md-4">' + button + nome + status + dispositivo + acao + ' </button> </div>';
+                content = content + '<div class="col-xs-12 col-sm-6 col-md-4">'+ edit + button + nome + status + dispositivo + acao + ' </button> </div>';
 
             }
 

@@ -67,3 +67,18 @@ footer ul li a {
     text-decoration: none !important;
     text-transform: uppercase;
 }
+
+
+/*Painel administrativo*/
+
+#admin form{
+    border: 1px solid #ddd;
+    margin-top: 10rem;
+    border-radius: 3px;
+}
+#admin form h4{
+    background: #4fbf5d;
+    color: #fff;
+    padding: 3rem;
+    margin-top: 0px !important;
+}
