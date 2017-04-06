@@ -64,14 +64,25 @@ def index():
 @app.route('/devices',  methods=['POST', 'GET'])
 def devices():
 
-	'''if request.method == 'POST':
-		id_ = 1#int(request.form['id'])
-        disp = Devices.query.filter_by(id_room = id_)
+	if request.method == 'POST':
+		#id_ = int(request.form['id'])
+        #disp = Devices.query.filter_by(id_room = id_)
 
         #dicionario = {"aparelhos": [{"pin":disp['pin'],"id": disp['id'], "nome":disp['name'], "status":disp['']}]}
-'''
-	disp = Devices.query.all()
-	return json.dumps(disp, cls=AlchemyEncoder)
+
+		dispositivos = []
+		#disp = Devices.query.all()
+		disp = Devices.query.filter_by(id_room= request.form['id']).all()
+		comodo = Rooms.query.filter_by(id_= request.form['id']).all()
+		#[{'comodo': 'Sala'}, {"aparelhos": [{"pin": 13, "id": 1, "nome": "Lampada 1", "status": 0}]}]
+		for i in disp:
+
+		#	if i.id_ == request.form['id']:
+			dispositivos.append(dict(id=i.id_,name=i.name,status=i.status))
+			print i.name
+		# d = json.dumps(c, cls=AlchemyEncoder)
+		return jsonify([{'comodo':c.__dict__.get('name') for c in comodo},{"aparelhos": dispositivos }])
+	#return json.dumps(disp, cls=AlchemyEncoder)
         #return redirect(url_for('index'))
     #return jsonify(aparelhos=[dict(nome='teste',status=1,id=1),  dict(nome='teste2',status=0,id=2)])
 
@@ -80,9 +91,13 @@ def devices():
 
 @app.route('/room')
 def room():
-    c = Rooms.query.all()
-    return json.dumps(c, cls=AlchemyEncoder)
-	#return jsonify(room=[dict(id=1,nome='sala'),  dict(id=2,nome='quarto')])
+    c = Rooms.query.filter_by(id_ = 1).all()
+    #dispositivos = {}
+    for i in c:
+	    dispositivos = [dict(nome=i.name, status=0, id=i.id_)]
+	    print i.name
+    #d = json.dumps(c, cls=AlchemyEncoder)
+    return jsonify(dispositivos)
 
 ################################################################
 ##################Funcao para trocar o status do dispositivo#####################
