@@ -95,9 +95,9 @@ def swap():
         print id_device
         device = Devices.query.filter_by(id_ = id_device)
         status_device = request.form['estado']
-        for i in device: pino = i.pin
+        for i in device: pino = int(i.pin)
         home = Home.Device(pino)
-        if (status_device=='1'):
+        if (status_device):
 
 	        home.onDevice(pino)
         if (status_device == '0'):
