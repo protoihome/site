@@ -83,7 +83,7 @@ def room():
     return jsonify(comodos)
 #######################################)#########################
 ##################Funcao para trocar o status do dispositivo#####################
-
+home = Home.Device(13)
 @app.route('/swap',  methods=['POST', 'GET'])
 def swap():
 
@@ -94,7 +94,7 @@ def swap():
         device = Devices.query.filter_by(id_ = id_device)
         status_device = request.form['estado']
         for i in device: pino = i.pin
-        home = Home.Device(pino)
+
         home.onDevice(pino)
         #if (status_device == 0):
         # #	home.offDevice(pino)
