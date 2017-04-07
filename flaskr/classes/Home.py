@@ -12,6 +12,7 @@ class Dicionario(dict):
 		self[key] = value
 
 class Device(object):
+
 	def __init__(self, pin_):
 		self.gpio = GPIO(debug=False)
 		self.gpio.pinMode(pin_, self.gpio.OUTPUT)
