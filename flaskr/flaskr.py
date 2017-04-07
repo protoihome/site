@@ -93,15 +93,12 @@ def swap():
         id_device = request.form['id']
         device = Devices.query.filter_by(id_ = id_device)
         status_device = request.form['estado']
-        for i in device:
-	        pino = i.pin
-
-		home = Home.Device(pino)
-        if (status_device):
-	        home.onDevice(pino)
-		if (status_device == 0):
-			home.offDevice(pino)
-		print home.getDevice(pino)
+        for i in device: pino = i.pin
+        home = Home.Device(pino)
+        home.onDevice(pino)
+        #if (status_device == 0):
+        # #	home.offDevice(pino)
+        print home.getDevice(pino)
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
