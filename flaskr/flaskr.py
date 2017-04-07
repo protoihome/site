@@ -98,7 +98,7 @@ def swap():
         for i in device: pino = i.pin
         if (status_device):
             home.onDevice(13)
-        if (status_device == 0):
+        if (status_device == '0'):
             home.offDevice(13)
         print home.getDevice(pino)
 
