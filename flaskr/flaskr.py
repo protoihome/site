@@ -14,6 +14,7 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ihome.sqlite3'
 app.config['SECRET_KEY'] = "random string"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 ####################################################################
 ####################################################################
@@ -90,9 +91,8 @@ def swap():
 
         #aparelho = request.form['id_ap']
         id_device = request.form['id']
-
         device = Devices.query.filter_by(id_ = id_device)
-        status_device = int(request.form['estado'])
+        status_device = request.form['estado']
         for i in device:
 	        pino = i.pin
 
