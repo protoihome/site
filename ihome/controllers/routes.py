@@ -1,10 +1,14 @@
-from flask import render_template, request, jsonify
+from flask import render_template, request, jsonify, url_for
 from ihome.database.managedb import db
 from ihome import app
 from ihome.models.modelsDB import Devices,Rooms
 from ihome.controllers.galileo import Device
 
 @app.route('/')
+def main():
+	return render_template('index.html')
+
+@app.route('/index')
 def index():
 	return render_template('index.html')
 
