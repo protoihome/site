@@ -21,7 +21,6 @@ def devices():
 		disp = Devices.query.filter_by(id_room= request.form['id']).all()
 		comodo = Rooms.query.filter_by(id_= request.form['id']).all()
 		for i in disp:
-
 			dispositivos.append(dict(id=i.id_,name='{0} - [{1}]'.format(i.name,i.pin),status=i.status))
 		return jsonify([{'comodo':c.__dict__.get('name') for c in comodo},{"aparelhos": dispositivos }])
 
@@ -48,18 +47,29 @@ def swap():
 
         device = Devices.query.filter_by(id_ = id_device)
         status_device = request.form['estado']
-        for i in device: pino = int(i.pin)
+
+        for i in device:
+	        pino = int(i.pin)
+
         home = Device(pino)
 
         if (status_device == '0'):
-            home.offDevice(pino)
-
+            #home.offDevice(pino)
+            for i in device:
+                i.status = status_device
+                status = i.status
+                db.session.commit()
         else:
-	        home.onDevice(pino)
+	        #home.onDevice(pino)
+	        for i in device:
+		        i.status = status_device
+		        status = i.status
+		        db.session.commit()
+
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
-        return jsonify(status=status_device)
+        return jsonify(status=status)
 
 @app.route('/comodos')
 def comodos():
