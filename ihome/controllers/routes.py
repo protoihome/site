@@ -53,12 +53,17 @@ def swap():
 
         if (status_device == '0'):
             home.offDevice(pino)
+
         else:
 	        home.onDevice(pino)
 
         #aqui entra a funcao para verificar o estado do pino na placa
         #return redirect(url_for('index'))
         return jsonify(status=status_device)
+
+@app.route('/comodos')
+def comodos():
+	return render_template('comodos.html')
 
 @app.route('/info')
 def info():
