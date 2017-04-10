@@ -81,6 +81,7 @@ def room():
         for i in c:
             comodos.append(dict(id=i.id_,nome=i.name))
     return jsonify(comodos)
+
 #######################################)#########################
 ##################Funcao para trocar o status do dispositivo#####################
 

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 from wiringx86 import GPIOGalileoGen2 as GPIO
 
 
