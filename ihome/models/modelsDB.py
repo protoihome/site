@@ -1,4 +1,4 @@
-from ihome import db
+from ihome.database.managedb import db
 
 class Devices(db.Model):
     id_ = db.Column(db.Integer, primary_key=True)
