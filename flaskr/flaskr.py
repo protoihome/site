@@ -79,14 +79,14 @@ def swap():
 		#home = Home.Device(pino)
 
 		if (status_device == '0'):
-		#	Home.offDevice(pino)
+			Home.offDevice(pino)
 			for i in device:
 				i.status = int(status_device)
 				db.session.commit()
 				status = i.status
 
 		else:
-		#	home.onDevice(pino)
+			Home.onDevice(pino)
 			for i in device:
 				i.status = int(status_device)
 				db.session.commit()
