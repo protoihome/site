@@ -136,11 +136,11 @@ def setPins():
 	dispositivos = Devices.query.all()
 	if dispositivos:
 		for dispositivo in dispositivos:
-			Device(dispositivo.pin)
+			disp = Device(dispositivo.pin)
 			if dispositivo.status == 0:
-				Device.offDevice(dispositivo.pin)
+				disp.offDevice(dispositivo.pin)
 			else:
-				Device.onDevice(dispositivo.pin)
+				disp.onDevice(dispositivo.pin)
 
 if __name__ == '__main__':
     #app.run(debug = True)
