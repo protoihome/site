@@ -2,12 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2130faf4-94a7-477d-ae07-1bbab5a7821d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ihome/settings.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/controllers/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/controllers/galileo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/controllers/routes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/database/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/database/ihome.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/manager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/models/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/models/modelsDB.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/css/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/css/bootstrap-dark.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/js/comodos_user_script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/js/config_script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/js/getRouteParameter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/js/nav_get_comodos_script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/js/writeFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/static/lib/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/templates/add_device.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/templates/add_room.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/templates/comodos.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/templates/configuracao.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/templates/info.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/ihome.sqlite3" afterPath="$PROJECT_DIR$/flaskr/ihome.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ihome/__init__.py" afterPath="$PROJECT_DIR$/ihome/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ihome/controllers/routes.py" afterPath="$PROJECT_DIR$/ihome/controllers/routes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ihome/manager.py" afterPath="$PROJECT_DIR$/ihome/manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ihome/models/modelsDB.py" afterPath="$PROJECT_DIR$/ihome/models/modelsDB.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +52,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/site$settings.coverage" NAME="settings Coverage Results" MODIFIED="1491833608725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome" />
-    <SUITE FILE_PATH="coverage/site$site.coverage" NAME="site Coverage Results" MODIFIED="1491848041516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/site$site.coverage" NAME="site Coverage Results" MODIFIED="1491920260982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/site$galileo.coverage" NAME="galileo Coverage Results" MODIFIED="1491868923799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome/controllers" />
     <SUITE FILE_PATH="coverage/site$routes.coverage" NAME="routes Coverage Results" MODIFIED="1491870230738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome/controllers" />
     <SUITE FILE_PATH="coverage/site$manager.coverage" NAME="manager Coverage Results" MODIFIED="1491912666081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome" />
@@ -36,54 +66,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ihome/manager.py">
+      <file leaf-file-name="flaskr.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-332">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ihome/controllers/routes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ihome/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ihome/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="270">
+              <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
               <folding>
-                <element signature="e#42#81#0" expanded="true" />
+                <element signature="e#111#145#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modelsDB.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ihome/models/modelsDB.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -120,7 +110,6 @@
         <option value="$PROJECT_DIR$/ihome/models/devices.py" />
         <option value="$PROJECT_DIR$/ihome/models/managerDB.py" />
         <option value="$PROJECT_DIR$/ihome/models/rooms.py" />
-        <option value="$PROJECT_DIR$/flaskr/flaskr.py" />
         <option value="$PROJECT_DIR$/ihome/database/managedb.py" />
         <option value="$PROJECT_DIR$/ihome/controllers/galileo.py" />
         <option value="$PROJECT_DIR$/ihome/settings.py" />
@@ -128,6 +117,7 @@
         <option value="$PROJECT_DIR$/ihome/controllers/routes.py" />
         <option value="$PROJECT_DIR$/ihome/__init__.py" />
         <option value="$PROJECT_DIR$/ihome/models/modelsDB.py" />
+        <option value="$PROJECT_DIR$/flaskr/flaskr.py" />
       </list>
     </option>
   </component>
@@ -195,25 +185,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ihome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ihome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="flaskr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,12 +195,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ihome" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../" />
       <recent name="$PROJECT_DIR$/ihome" />
       <recent name="$PROJECT_DIR$/ihome/settings" />
       <recent name="$PROJECT_DIR$/ihome/controllers" />
@@ -238,7 +211,7 @@
       <recent name="$PROJECT_DIR$/ihome" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.manager">
+  <component name="RunManager" selected="Python.site">
     <configuration default="false" name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -566,20 +539,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490836308214</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Testando na placa">
-      <created>1490913566421</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1490913566421</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Funcionando com as funcoes apagar e ligar led">
-      <created>1490917743870</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1490917743870</updated>
     </task>
     <task id="LOCAL-00004" summary="Pegando ip automaticamente da placa e servindo nesse endereço">
       <created>1491000696892</created>
@@ -910,7 +869,21 @@
       <option name="project" value="LOCAL" />
       <updated>1491875098530</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="retornando arquivos">
+      <created>1491917814867</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1491917814867</updated>
+    </task>
+    <task id="LOCAL-00052" summary="retornando arquivos">
+      <created>1491917961941</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1491917961941</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -993,7 +966,8 @@
     <MESSAGE value="organizacao scripts ultimo corrigido" />
     <MESSAGE value="Somente um pino poderá ser cadastrado" />
     <MESSAGE value="Função para inicializar os pinos está ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Função para inicializar os pinos está ok" />
+    <MESSAGE value="retornando arquivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="retornando arquivos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1256,7 +1230,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/templates/info.html">
+    <entry file="file://$PROJECT_DIR$/../ihome/templates/info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1296,7 +1270,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/controllers/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../ihome/controllers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
@@ -1312,15 +1286,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1482">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/controllers/galileo.py">
+    <entry file="file://$PROJECT_DIR$/../ihome/controllers/galileo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
@@ -1328,7 +1294,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/database/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../ihome/database/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1336,33 +1302,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding>
-            <element signature="e#42#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/models/modelsDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/manager.py">
+    <entry file="file://$PROJECT_DIR$/../ihome/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-332">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
@@ -1370,11 +1310,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/controllers/routes.py">
+    <entry file="file://$PROJECT_DIR$/../ihome/controllers/routes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ihome/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ihome/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#42#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ihome/models/modelsDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
+          <folding>
+            <element signature="e#111#145#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

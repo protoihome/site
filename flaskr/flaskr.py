@@ -35,10 +35,6 @@ class Devices(db.Model):
 
 ####################################################################
 ####################################################################
-
-#comodos = Banco.Rooms()
-#dispositivos = Banco.Devices()
-##################################################################
 #########Funcao de render do template index###################################
 @app.route('/index')
 def index():
@@ -48,27 +44,13 @@ def index():
 
 @app.route('/devices',  methods=['POST', 'GET'])
 def devices():
-
 	if request.method == 'POST':
-		#id_ = int(request.form['id'])
-        #disp = Devices.query.filter_by(id_room = id_)
-
-        #dicionario = {"aparelhos": [{"pin":disp['pin'],"id": disp['id'], "nome":disp['name'], "status":disp['']}]}
-
 		dispositivos = []
-		#disp = Devices.query.all()
 		disp = Devices.query.filter_by(id_room= request.form['id']).all()
 		comodo = Rooms.query.filter_by(id_= request.form['id']).all()
-		#[{'comodo': 'Sala'}, {"aparelhos": [{"pin": 13, "id": 1, "nome": "Lampada 1", "status": 0}]}]
 		for i in disp:
-
-		#	if i.id_ == request.form['id']:
-			dispositivos.append(dict(id=i.id_,name=i.name+' [ '+i.pin+' ]',status=i.status))
-		# d = json.dumps(c, cls=AlchemyEncoder)
+			dispositivos.append(dict(id=i.id_, name='{0} - [{1}]'.format(i.name, i.pin), status=i.status))
 		return jsonify([{'comodo':c.__dict__.get('name') for c in comodo},{"aparelhos": dispositivos }])
-	#return json.dumps(disp, cls=AlchemyEncoder)
-        #return redirect(url_for('index'))
-    #return jsonify(aparelhos=[dict(nome='teste',status=1,id=1),  dict(nome='teste2',status=0,id=2)])
 
 ##################################################################
 ###################Funcao para listar os comodos#############################
@@ -87,24 +69,33 @@ def room():
 
 @app.route('/swap',  methods=['POST', 'GET'])
 def swap():
+	if request.method == 'POST':
+		id_device = request.form['id']
+		device = Devices.query.filter_by(id_=id_device)
+		status_device = request.form['estado']
 
-    if request.method == 'POST':
+		for i in device:
+			pino = int(i.pin)
+		home = Home.Device(pino)
 
-        #aparelho = request.form['id_ap']
-        id_device = request.form['id']
+		if (status_device == '0'):
+			home.offDevice(pino)
+			for i in device:
+				i.status = status_device
+				status = i.status
+				db.session.commit()
+		else:
+			home.onDevice(pino)
+			for i in device:
+				i.status = status_device
+				status = i.status
+				db.session.commit()
 
-        device = Devices.query.filter_by(id_ = id_device)
-        status_device = request.form['estado']
-        for i in device: pino = int(i.pin)
-        home = Home.Device(pino)
-        if (status_device):
 
-	        home.onDevice(pino)
-        if (status_device == '0'):
-            home.offDevice(pino)
-        #aqui entra a funcao para verificar o estado do pino na placa
-        #return redirect(url_for('index'))
-        return jsonify(status=status_device)
+		# aqui entra a funcao para verificar o estado do pino na placa
+		# return redirect(url_for('index'))
+	return jsonify(status=status)
+
 
 @app.route('/comodos')
 def comdos():
@@ -129,6 +120,19 @@ def add_room():
 		db.session.add(comodos)
 		db.session.commit()
 	return render_template('add_room.html')		
+
+
+@app.cli.command('initpin')
+def setPins():
+	dispositivos = Devices.query.all()
+	if dispositivos:
+		for dispositivo in dispositivos:
+			Home(dispositivo.pin)
+			if dispositivo.status == 0:
+				Home.offDevice(dispositivo.pin)
+			else:
+				Home.onDevice(dispositivo.pin)
+
 if __name__ == '__main__':
     #app.run(debug = True)
     #Comando para buscar informações e filtrar o ip
