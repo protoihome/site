@@ -71,25 +71,27 @@ def room():
 def swap():
 	if request.method == 'POST':
 		id_device = request.form['id']
-		device = Devices.query.filter_by(id_=id_device)
+		device = Devices.query.filter_by(id_=id_device).all()
 		status_device = request.form['estado']
 
 		for i in device:
 			pino = int(i.pin)
-		home = Home.Device(pino)
+		#home = Home.Device(pino)
 
 		if (status_device == '0'):
-			home.offDevice(pino)
+			Home.offDevice(pino)
 			for i in device:
-				i.status = status_device
-				status = i.status
+				i.status = int(status_device)
 				db.session.commit()
+				status = i.status
+
 		else:
-			home.onDevice(pino)
+			Home.onDevice(pino)
 			for i in device:
-				i.status = status_device
-				status = i.status
+				i.status = int(status_device)
 				db.session.commit()
+				status = i.status
+
 
 
 		# aqui entra a funcao para verificar o estado do pino na placa
@@ -127,11 +129,11 @@ def setPins():
 	dispositivos = Devices.query.all()
 	if dispositivos:
 		for dispositivo in dispositivos:
-			Home(dispositivo.pin)
+			home = Home(dispositivo.pin)
 			if dispositivo.status == 0:
-				Home.offDevice(dispositivo.pin)
+				home.offDevice(dispositivo.pin)
 			else:
-				Home.onDevice(dispositivo.pin)
+				home.onDevice(dispositivo.pin)
 
 if __name__ == '__main__':
     #app.run(debug = True)
