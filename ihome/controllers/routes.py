@@ -3,7 +3,7 @@
 from flask import render_template, request, jsonify
 from ihome import app,db
 from ihome.models.modelsDB import Devices,Rooms
-from ihome.controllers.galileo import Device
+from ihome.controllers.galileo import InDevices, Dicionario
 
 @app.route('/')
 def main():
@@ -51,7 +51,7 @@ def swap():
         for i in device:
 	        pino = int(i.pin)
 
-        home = Device(pino)
+        #home = Device(pino)
 
         if (status_device == '0'):
             #home.offDevice(pino)
@@ -94,3 +94,14 @@ def add_room():
 		db.session.add(comodos)
 		db.session.commit()
 	return render_template('add_room.html')
+
+@app.cli.command('initpin')
+def setPins():
+	dispositivos = Devices.query.all()
+	if dispositivos:
+		for dispositivo in dispositivos:
+			InDevices(dispositivo.pin)
+			if dispositivo.status == 0:
+				InDevices.offDevice(dispositivo.pin)
+			else:
+				InDevices.onDevice(dispositivo.pin)

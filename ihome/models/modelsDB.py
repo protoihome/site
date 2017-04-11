@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+from ihome.controllers.galileo import Dicionario
 from ihome import db
 class Devices(db.Model):
 

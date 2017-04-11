@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from wiringx86 import GPIOGalileoGen2 as GPIO
-from ihome.models.modelsDB import Rooms, Devices
-from ihome import db
+
 class Dicionario(dict):
 	def __init__(self):
 		self = dict()
@@ -11,7 +10,7 @@ class Dicionario(dict):
 		self[key] = value
 
 
-class Device(object):
+class InDevices(object):
 	def __init__(self, pin_):
 		self.gpio = GPIO(debug=False)
 		self.gpio.pinMode(pin_, self.gpio.OUTPUT)
@@ -24,10 +23,3 @@ class Device(object):
 
 	def getDevice(self, pin_):
 		return self.gpio.digitalRead(pin_)
-
-	def getPinos(self):
-		dispositivos = Devices.query.all()
-		if dispositivos:
-		 for dispositivo in dispositivos:
-
-			 self.gpio.pinMode(pino)

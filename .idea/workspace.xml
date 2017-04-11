@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2130faf4-94a7-477d-ae07-1bbab5a7821d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ihome/database/ihome.sqlite3" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ihome/database/ihome.sqlite3" afterPath="$PROJECT_DIR$/ihome/database/ihome.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ihome/controllers/galileo.py" afterPath="$PROJECT_DIR$/ihome/controllers/galileo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ihome/controllers/routes.py" afterPath="$PROJECT_DIR$/ihome/controllers/routes.py" />
@@ -22,7 +22,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/site$settings.coverage" NAME="settings Coverage Results" MODIFIED="1491833608725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome" />
     <SUITE FILE_PATH="coverage/site$site.coverage" NAME="site Coverage Results" MODIFIED="1491848041516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/site$manager.coverage" NAME="manager Coverage Results" MODIFIED="1491867487591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome" />
+    <SUITE FILE_PATH="coverage/site$galileo.coverage" NAME="galileo Coverage Results" MODIFIED="1491868923799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome/controllers" />
+    <SUITE FILE_PATH="coverage/site$routes.coverage" NAME="routes Coverage Results" MODIFIED="1491870230738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome/controllers" />
+    <SUITE FILE_PATH="coverage/site$manager.coverage" NAME="manager Coverage Results" MODIFIED="1491868254030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ihome/controllers/routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="313">
+              <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
               <folding>
                 <element signature="e#42#93#0" expanded="true" />
               </folding>
@@ -48,21 +50,21 @@
       <file leaf-file-name="galileo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ihome/controllers/galileo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="23" />
-              <folding>
-                <element signature="e#42#87#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modelsDB.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modelsDB.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ihome/models/modelsDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="e#42#90#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,9 +105,9 @@
         <option value="$PROJECT_DIR$/ihome/settings.py" />
         <option value="$PROJECT_DIR$/ihome/__init__.py" />
         <option value="$PROJECT_DIR$/ihome/manager.py" />
-        <option value="$PROJECT_DIR$/ihome/controllers/routes.py" />
         <option value="$PROJECT_DIR$/ihome/controllers/galileo.py" />
         <option value="$PROJECT_DIR$/ihome/models/modelsDB.py" />
+        <option value="$PROJECT_DIR$/ihome/controllers/routes.py" />
       </list>
     </option>
   </component>
@@ -177,42 +179,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ihome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ihome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -229,7 +195,7 @@
       <recent name="$PROJECT_DIR$/ihome" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.manager">
+  <component name="RunManager" selected="Python.routes">
     <configuration default="false" name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,6 +228,42 @@
       <module name="site" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ihome/manager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="galileo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ihome/controllers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="site" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ihome/controllers/galileo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="routes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ihome/controllers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="site" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ihome/controllers/routes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -492,15 +494,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.site" />
       <item index="1" class="java.lang.String" itemvalue="Python.settings" />
       <item index="2" class="java.lang.String" itemvalue="Python.manager" />
+      <item index="3" class="java.lang.String" itemvalue="Python.galileo" />
+      <item index="4" class="java.lang.String" itemvalue="Python.routes" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.manager" />
-        <item index="1" class="java.lang.String" itemvalue="Python.settings" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.routes" />
+        <item index="1" class="java.lang.String" itemvalue="Python.galileo" />
+        <item index="2" class="java.lang.String" itemvalue="Python.manager" />
+        <item index="3" class="java.lang.String" itemvalue="Python.settings" />
       </list>
     </recent_temporary>
   </component>
@@ -840,7 +846,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491863594591</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Somente um pino poderá ser cadastrado">
+      <created>1491868048645</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1491868048645</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -921,7 +934,8 @@
     <MESSAGE value="organizacao scripts erro no banco" />
     <MESSAGE value="organizacao scripts erro no banco corrigido" />
     <MESSAGE value="organizacao scripts ultimo corrigido" />
-    <option name="LAST_COMMIT_MESSAGE" value="organizacao scripts ultimo corrigido" />
+    <MESSAGE value="Somente um pino poderá ser cadastrado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Somente um pino poderá ser cadastrado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1284,31 +1298,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ihome/controllers/routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ihome/controllers/galileo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="e#42#87#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ihome/models/modelsDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ihome/controllers/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
+          <folding>
+            <element signature="e#42#93#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
