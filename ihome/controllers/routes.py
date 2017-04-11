@@ -40,25 +40,22 @@ def room():
 
 @app.route('/swap',  methods=['POST', 'GET'])
 def swap():
+	if request.method == 'POST':
+		id_device = request.form['id']
+		device = Devices.query.filter_by(id_ = id_device)
+		status_device = request.form['estado']
 
-    if request.method == 'POST':
+		for i in device:
+			pino = int(i.pin)
 
-        id_device = request.form['id']
-
-        device = Devices.query.filter_by(id_ = id_device)
-        status_device = request.form['estado']
-
-        for i in device:
-	        pino = int(i.pin)
-
-        if (status_device == '0'):
-            InDevices.offDevice(pino)
-            for i in device:
-                i.status = status_device
-                status = i.status
-                db.session.commit()
-        else:
-	        InDevices.onDevice(pino)
+		if (status_device == '0'):
+			InDevices.offDevice(pino)
+			for i in device:
+				i.status = status_device
+				status = i.status
+				db.session.commit()
+		else:
+			InDevices.onDevice(pino)
 	        for i in device:
 		        i.status = status_device
 		        status = i.status
