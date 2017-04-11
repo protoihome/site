@@ -129,18 +129,18 @@ def setPins():
 	dispositivos = Devices.query.all()
 	if dispositivos:
 		for dispositivo in dispositivos:
-			Home(dispositivo.pin)
+			home = Home(dispositivo.pin)
 			if dispositivo.status == 0:
-				Home.offDevice(dispositivo.pin)
+				home.offDevice(dispositivo.pin)
 			else:
-				Home.onDevice(dispositivo.pin)
+				home.onDevice(dispositivo.pin)
 
 if __name__ == '__main__':
     #app.run(debug = True)
     #Comando para buscar informações e filtrar o ip
     db.create_all()
     db.session.commit()
-    #setPins()
+    setPins()
     cmd = "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'"
     p = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
     #Recebendo o IP que está na placa no eth0
