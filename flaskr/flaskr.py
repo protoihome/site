@@ -76,20 +76,22 @@ def swap():
 
 		for i in device:
 			pino = int(i.pin)
-		home = Home.Device(pino)
+		#home = Home.Device(pino)
 
 		if (status_device == '0'):
-			home.offDevice(pino)
+		#	Home.offDevice(pino)
 			for i in device:
-				i.status = status_device
-				status = i.status
+				i.status = int(status_device)
 				db.session.commit()
+				status = i.status
+
 		else:
-			home.onDevice(pino)
+		#	home.onDevice(pino)
 			for i in device:
-				i.status = status_device
-				status = i.status
+				i.status = int(status_device)
 				db.session.commit()
+				status = i.status
+
 
 
 		# aqui entra a funcao para verificar o estado do pino na placa
@@ -138,7 +140,7 @@ if __name__ == '__main__':
     #Comando para buscar informações e filtrar o ip
     db.create_all()
     db.session.commit()
-    setPins()
+    #setPins()
     cmd = "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'"
     p = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
     #Recebendo o IP que está na placa no eth0
