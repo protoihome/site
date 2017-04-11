@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2130faf4-94a7-477d-ae07-1bbab5a7821d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/ihome.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flaskr/ihome.sqlite3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -659,13 +656,6 @@
       <option name="presentableId" value="Default" />
       <updated>1490836308214</updated>
     </task>
-    <task id="LOCAL-00012" summary="estrutura comodos jsonify">
-      <created>1491503169457</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1491503169457</updated>
-    </task>
     <task id="LOCAL-00013" summary="exclusao classes">
       <created>1491515454457</created>
       <option name="number" value="00013" />
@@ -1002,7 +992,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491942865889</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="retornando arquivos funcao setando os pinos corrigido">
+      <created>1491943476470</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1491943476470</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1061,7 +1058,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Funcionando com as funcoes apagar e ligar led" />
     <MESSAGE value="Pegando ip automaticamente da placa e servindo nesse endereço" />
     <MESSAGE value="esqueci o condig UTF-8  portugues" />
     <MESSAGE value="No arquivos js não é necessario colocar a url toda apenas a rota" />
@@ -1086,7 +1082,8 @@
     <MESSAGE value="retornando arquivos" />
     <MESSAGE value="retornando arquivos correto" />
     <MESSAGE value="retornando arquivos funcao setando os pinos" />
-    <option name="LAST_COMMIT_MESSAGE" value="retornando arquivos funcao setando os pinos" />
+    <MESSAGE value="retornando arquivos funcao setando os pinos corrigido" />
+    <option name="LAST_COMMIT_MESSAGE" value="retornando arquivos funcao setando os pinos corrigido" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
