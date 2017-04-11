@@ -71,7 +71,7 @@ def room():
 def swap():
 	if request.method == 'POST':
 		id_device = request.form['id']
-		device = Devices.query.filter_by(id_=id_device)
+		device = Devices.query.filter_by(id_=id_device).all()
 		status_device = request.form['estado']
 
 		for i in device:
