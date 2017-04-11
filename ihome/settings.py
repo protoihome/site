@@ -1,9 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#from ihome import db,app, get_ip, PORTA
-from controllers import routes
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -33,12 +29,3 @@ def get_ip():
 	# Recebendo o IP que está na placa no eth0
 	AdressIP, err = p.communicate()
 	return AdressIP
-
-
-
-if __name__ == '__main__':
-	db.create_all()
-	db.session.commit()
-	host = get_ip()
-	app.run(debug=True, threaded=True)
-	#app.run(host=host, port=PORTA, debug=True, threaded=True)

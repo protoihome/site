@@ -1,9 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from flask import render_template, request, jsonify
-from ihome import app,db
+
+from ihome.controllers.galileo import InDevices
 from ihome.models.modelsDB import Devices,Rooms
-from ihome.controllers.galileo import InDevices, Dicionario
+from ihome.manager import app, db
+
 
 @app.route('/')
 def main():
