@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2130faf4-94a7-477d-ae07-1bbab5a7821d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskr/flaskr.py" afterPath="$PROJECT_DIR$/flaskr/flaskr.py" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,7 +17,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/site$settings.coverage" NAME="settings Coverage Results" MODIFIED="1491833608725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome" />
-    <SUITE FILE_PATH="coverage/site$site.coverage" NAME="site Coverage Results" MODIFIED="1491942105469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/site$site.coverage" NAME="site Coverage Results" MODIFIED="1491942304774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/site$galileo.coverage" NAME="galileo Coverage Results" MODIFIED="1491868923799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome/controllers" />
     <SUITE FILE_PATH="coverage/site$routes.coverage" NAME="routes Coverage Results" MODIFIED="1491870230738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome/controllers" />
     <SUITE FILE_PATH="coverage/site$manager.coverage" NAME="manager Coverage Results" MODIFIED="1491912666081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ihome" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="flaskr.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+            <state relative-caret-position="306">
+              <caret line="141" column="23" selection-start-line="141" selection-start-column="23" selection-end-line="141" selection-end-column="23" />
               <folding>
                 <element signature="e#111#145#0" expanded="true" />
               </folding>
@@ -534,20 +533,6 @@
       <option name="presentableId" value="Default" />
       <updated>1490836308214</updated>
     </task>
-    <task id="LOCAL-00007" summary="No arquivos js não é necessario colocar a url toda apenas a rota">
-      <created>1491085088074</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1491085088074</updated>
-    </task>
-    <task id="LOCAL-00008" summary="No arquivos js não é necessario colocar a url toda apenas a rota">
-      <created>1491085949277</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1491085949277</updated>
-    </task>
     <task id="LOCAL-00009" summary="ultimo de hoje">
       <created>1491087759353</created>
       <option name="number" value="00009" />
@@ -877,7 +862,21 @@
       <option name="project" value="LOCAL" />
       <updated>1491942159583</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="retornando arquivos funcao setando os pinos">
+      <created>1491942223677</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1491942223682</updated>
+    </task>
+    <task id="LOCAL-00057" summary="retornando arquivos funcao setando os pinos">
+      <created>1491942334964</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1491942334965</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1327,8 +1326,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/flaskr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="141" column="23" selection-start-line="141" selection-start-column="23" selection-end-line="141" selection-end-column="23" />
           <folding>
             <element signature="e#111#145#0" expanded="true" />
           </folding>
