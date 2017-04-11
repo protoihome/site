@@ -122,7 +122,7 @@ def add_room():
 	return render_template('add_room.html')		
 
 
-@app.cli.command('initpin')
+#@app.cli.command('initpin')
 def setPins():
 	dispositivos = Devices.query.all()
 	if dispositivos:
@@ -138,9 +138,9 @@ if __name__ == '__main__':
     #Comando para buscar informações e filtrar o ip
     db.create_all()
     db.session.commit()
+    setPins()
     cmd = "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'"
     p = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
     #Recebendo o IP que está na placa no eth0
     AdressIP, err = p.communicate()
     app.run(host=AdressIP, port=5000, debug=True, threaded=True)
-
