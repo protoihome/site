@@ -4,7 +4,7 @@
 ################ Bibliotecas utilizadas ##########################
 
 from subprocess import Popen, PIPE
-from classes import Home
+from classes.Home import Device
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
@@ -76,17 +76,17 @@ def swap():
 
 		for i in device:
 			pino = int(i.pin)
-		#home = Home.Device(pino)
+		home = Device(pino)
 
 		if (status_device == '0'):
-			Home.offDevice(pino)
+			home.offDevice(pino)
 			for i in device:
 				i.status = int(status_device)
 				db.session.commit()
 				status = i.status
 
 		else:
-			Home.onDevice(pino)
+			home.onDevice(pino)
 			for i in device:
 				i.status = int(status_device)
 				db.session.commit()
@@ -129,11 +129,11 @@ def setPins():
 	dispositivos = Devices.query.all()
 	if dispositivos:
 		for dispositivo in dispositivos:
-			home = Home(dispositivo.pin)
+			Device(dispositivo.pin)
 			if dispositivo.status == 0:
-				home.offDevice(dispositivo.pin)
+				Device.offDevice(dispositivo.pin)
 			else:
-				home.onDevice(dispositivo.pin)
+				Device.onDevice(dispositivo.pin)
 
 if __name__ == '__main__':
     #app.run(debug = True)
